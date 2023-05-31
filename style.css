@@ -1,0 +1,121 @@
+.containerGeral {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.secaoPerguntaResposta {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    width: 2vw;
+    height: 4vh;
+    background-color: beige;
+    font-size: 150%;
+    justify-content: center;
+    text-align: center;
+    border: 0.5px solid black;
+
+}
+
+#respostaOculta {
+    background-color: black;
+}
+
+.REGISTRADORES {
+    background-color: black;
+}
+
+.ULA {
+    background-color: black;
+}
+
+.DMA {
+    background-color: black;
+
+}
+
+.DATABUS {
+    background-color: black;
+
+}
+
+.ADDRESSBUS {
+    background-color: black;
+
+}
+
+.FLASH {
+    background-color: black;
+
+}
+
+
+.ROM {
+    background-color: black;
+
+}
+
+.RAM {
+    background-color: black;
+
+}
+
+.QUADCORE {
+    background-color: black;
+
+}
+
+.CPU {
+    background-color: black;
+
+}
+
+.CS {
+    background-color: black;
+
+}
+
+.DUALCORE {
+    background-color: black;
+
+}
+
+.CACHE {
+    background-color: black;
+
+}
+
+.REGISTRADORES {
+    background-color: black;
+
+}
+
+.MEMORIADEMASSA {
+    background-color: black;
+
+}
+
+.I7 {
+    background-color: black;
+
+}
+
+.I5 {
+    background-color: black;
+
+}
+
+.THREADS {
+    background-color: black;
+
+}
+
+.EPROM {
+    background-color: black;
+
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="containerGeral">
+    <div class="secaoPerguntaResposta">
+      <h3>Responda</h3>
+      <div id="div_perguntas"></div>
+      <input id="inputRespostas" />
+      <button onclick="validarResposta()">Validar Resposta</button>
+      <div class="sectionCruzada">
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DMA DATABUS">D</td>
+        <td class="DMA">M</td>
+        <td class="DMA">A</td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES EPROM">E</td>
+        <td class="EPROM">P</td>
+        <td class="EPROM">R</td>
+        <td class="EPROM">O</td>
+        <td class="EPROM">M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DATABUS">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">G</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DATABUS">T</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES I5">I</td>
+        <td class="I5">5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="MEMORIADEMASSA">M</td>
+        <td class="MEMORIADEMASSA">E</td>
+        <td class="MEMORIADEMASSA">M</td>
+        <td class="MEMORIADEMASSA">O</td>
+        <td class="MEMORIADEMASSA">R</td>
+        <td class="MEMORIADEMASSA I7">I</td>
+        <td class="MEMORIADEMASSA DATABUS">A</td>
+        <td class="MEMORIADEMASSA">D</td>
+        <td class="MEMORIADEMASSA">E</td>
+        <td class="MEMORIADEMASSA">M</td>
+        <td class="MEMORIADEMASSA">A</td>
+        <td class="REGISTRADORES MEMORIADEMASSA">S</td>
+        <td class="MEMORIADEMASSA">S</td>
+        <td class="MEMORIADEMASSA">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="I7">7</td>
+        <td class="DATABUS">B</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">T</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="ULA DATABUS">U</td>
+        <td class="ULA">L</td>
+        <td class="ULA">A</td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="CS">C</td>
+        <td></td>
+        <td class="DUALCORE">D</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="THREADS">T</td>
+        <td class="THREADS">H</td>
+        <td class="THREADS">R</td>
+        <td class="THREADS">E</td>
+        <td class="THREADS">A</td>
+        <td class="THREADS">D</td>
+        <td class="THREADS DATABUS">S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES ADDRESSBUS">A</td>
+        <td class="ADDRESSBUS">D</td>
+        <td class="ADDRESSBUS">D</td>
+        <td class="ADDRESSBUS">R</td>
+        <td class="ADDRESSBUS">E</td>
+        <td class="ADDRESSBUS">S</td>
+        <td class="ADDRESSBUS CS">S</td>
+        <td class="ADDRESSBUS">B</td>
+        <td class="ADDRESSBUS DUALCORE">U</td>
+        <td class="ADDRESSBUS">S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">D</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DUALCORE">A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="FLASH">F</td>
+        <td class="FLASH DUALCORE">L</td>
+        <td class="FLASH">A</td>
+        <td class="FLASH">S</td>
+        <td class="FLASH">H</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="RAM">R</td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DUALCORE">C</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="CACHE">C</td>
+        <td class="CACHE RAM">A</td>
+        <td class="CACHE">C</td>
+        <td class="CACHE">H</td>
+        <td class="REGISTRADORES CACHE">E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="ROM">R</td>
+        <td class="ROM DUALCORE">O</td>
+        <td class="ROM">M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="RAM">M</td>
+        <td></td>
+        <td></td>
+        <td class="REGISTRADORES">S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="DUALCORE">R</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="QUADCORE">Q</td>
+        <td class="QUADCORE">U</td>
+        <td class="QUADCORE">A</td>
+        <td class="QUADCORE">D</td>
+        <td class="QUADCORE CPU">C</td>
+        <td class="QUADCORE">O</td>
+        <td class="QUADCORE">R</td>
+        <td class="QUADCORE DUALCORE">E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="CPU">P</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="CPU DATABUS">U</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var listaRespostas = [
+    "ULA",
+    "DMA",
+    "DATABUS",
+    "ADDRESSBUS",
+    "FLASH",
+    "ROM",
+    "RAM",
+    "QUADCORE",
+    "CPU",
+    "CS",
+    "DUALCORE",
+    "CACHE",
+    "REGISTRADORES",
+    "MEMORIADEMASSA",
+    "I7",
+    "I5",
+    "THREADS",
+    "EPROM",
+  ];
+
+  function validarResposta() {
+    var resposta = inputRespostas.value;
+    var acerto = false;
+
+    for (var i = 0; i < listaRespostas.length; i++) {
+      if (resposta.toUpperCase() == listaRespostas[i]) {
+        acerto = true;
+      }
+    }
+    if (acerto == true) {
+      alert("Acertou");
+      pintarLetras(resposta);
+    } else {
+      alert("Errou");
+    }
+  }
+
+  function pintarLetras(resposta) {
+    var ocultar = document.getElementsByClassName(`${resposta}`);
+    for (let i = 0; i < ocultar.length; i++) {
+      const element = ocultar[i];
+      element.style.backgroundColor = "white";
+    }
+  }
+
+  function pergunta() { }
+</script>
