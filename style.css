@@ -1,121 +1,67 @@
-.containerGeral {
+#body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(assets/papelJornal.avif);
+}
+
+.containerSessaoPalavraCruzada {
     width: 100%;
     display: flex;
     flex-direction: row;
-
 }
 
-.secaoPerguntaResposta {
-    width: 20%;
+.containerGeral h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+    color: #4d2910c1;
+    background-color: black;
+}
+
+.containerGeral {
+    width: 95%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
 }
 
-td {
-    width: 2vw;
-    height: 4vh;
-    background-color: beige;
+.secaoPerguntaResposta {
+    width: 15%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secaoPerguntaResposta h3 {
+    font-size: 250%;
+}
+
+#div_perguntas {
     font-size: 150%;
+}
+
+.palavraCruzada {
+    width: 80%;
+}
+
+#cor {
+    background-color: black;
+}
+
+#cor::selection {
+    color: black;
+}
+
+.palavraCruzada td {
+    width: 30px;
+    height: 20px;
+    font-size: 130%;
     justify-content: center;
     text-align: center;
-    border: 0.5px solid black;
-
-}
-
-#respostaOculta {
-    background-color: black;
-}
-
-.REGISTRADORES {
-    background-color: black;
-}
-
-.ULA {
-    background-color: black;
-}
-
-.DMA {
-    background-color: black;
-
-}
-
-.DATABUS {
-    background-color: black;
-
-}
-
-.ADDRESSBUS {
-    background-color: black;
-
-}
-
-.FLASH {
-    background-color: black;
-
-}
-
-
-.ROM {
-    background-color: black;
-
-}
-
-.RAM {
-    background-color: black;
-
-}
-
-.QUADCORE {
-    background-color: black;
-
-}
-
-.CPU {
-    background-color: black;
-
-}
-
-.CS {
-    background-color: black;
-
-}
-
-.DUALCORE {
-    background-color: black;
-
-}
-
-.CACHE {
-    background-color: black;
-
-}
-
-.REGISTRADORES {
-    background-color: black;
-
-}
-
-.MEMORIADEMASSA {
-    background-color: black;
-
-}
-
-.I7 {
-    background-color: black;
-
-}
-
-.I5 {
-    background-color: black;
-
-}
-
-.THREADS {
-    background-color: black;
-
-}
-
-.EPROM {
-    background-color: black;
-
+    background-color: #4d2910c1;
+    border: 1 px solid black;
 }
