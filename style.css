@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,14 +13,16 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .containerGeral h1 {
     width: 100%;
     text-align: center;
     font-size: 250%;
-    color: #4d2910c1;
-    background-color: black;
+    border-radius: 5px;
+    color: #f76700ab;
+    background-color: rgba(0, 0, 0, 0.785);
 }
 
 .containerGeral {
@@ -30,14 +33,25 @@
 }
 
 .secaoPerguntaResposta {
-    width: 15%;
-    margin: 10%;
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
 
 .secaoPerguntaResposta h3 {
-    font-size: 250%;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 300%;
+    color: #f76700ab;
+    background-color: rgba(0, 0, 0, 0.785);
+}
+
+.secaoPerguntaResposta p {
+    width: 180%;
+    font-size: 70%;
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 #div_perguntas {
@@ -45,7 +59,7 @@
 }
 
 .palavraCruzada {
-    width: 80%;
+    width: 60%;
 }
 
 #cor {
