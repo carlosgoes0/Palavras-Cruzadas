@@ -2,18 +2,27 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url(assets/papelJornal.avif);
+    
 }
 
+#idNumeracao{
+    background-color: transparent;
+    background-color: #f76700dd;
+    color: black;
+    font-weight: bold;
+}
 .containerSessaoPalavraCruzada {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 80vh;
 }
 
 .containerGeral h1 {
@@ -27,9 +36,9 @@
 
 .containerGeral {
     width: 95%;
-    margin-bottom: 5%;
-    display: flex;
     flex-direction: column;
+    display: flex;
+
 }
 
 .secaoPerguntaResposta {
@@ -45,21 +54,35 @@
     font-size: 300%;
     color: #f76700ab;
     background-color: rgba(0, 0, 0, 0.785);
+   
 }
 
 .secaoPerguntaResposta p {
-    width: 180%;
+    width: 100%;
     font-size: 70%;
     color: rgb(255, 255, 255);
     background-color: black;
+    border-radius: 5px;
 }
 
 #div_perguntas {
-    font-size: 150%;
-}
+    background-color: rgba(0, 0, 0, 0.312);
+    border-radius: 5px;
+    width: 190%;
+    font-size: 200%;
+    padding: 1%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 70%;
+     
+    
+    }
 
 .palavraCruzada {
     width: 60%;
+    
 }
 
 #cor {
@@ -76,6 +99,27 @@
     font-size: 130%;
     justify-content: center;
     text-align: center;
-    background-color: #4d2910c1;
+    background-color: transparent;
     border: 1 px solid black;
+    user-select: none;
+   
+    
+}
+input {
+    margin-left: 20%;
+    font-size: 150%;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
+   
+}
+
+button{
+    margin-left: 2%;
+    font-size: 150%;
+    margin-bottom: 3%;
+    border-radius: 3px;
 }

@@ -14,35 +14,40 @@
     <h1>Jornal da Cidade - Palavra Cruzada</h1>
     <div class="containerSessaoPalavraCruzada">
       <div class="secaoPerguntaResposta">
-        <h3>Pergunta</h3>
+        <h3>Perguntas</h3>
+        
         <div id="div_perguntas">
-          <p> Que componente de um computador é responsável pelas operações lógicas e aritméticas? </p>
-          <p> Que sigla é comumente usada para se referir à transferência direta de dados entre dispositivos sem a
+          <p>1. Que componente de um computador é responsável pelas operações lógicas e aritméticas? </p>
+          <p>2. Que sigla é comumente usada para se referir à transferência direta de dados entre dispositivos sem a
             intervenção da CPU?</p>
-          <p> Qual é o canal de comunicação utilizado para transferir dados entre o processador e outros componentes do
+          <p>3. Qual é o canal de comunicação utilizado para transferir dados entre o processador e outros componentes do
             sistema? </p>
-          <p> Qual é o barramento responsável por transmitir endereços de memória para o processador?</p>
-          <p> Que tipo de memória é não volátil e permite regravação repetida?</p>
-          <p> Que tipo de memória é apenas de leitura e contém informações permanentes?</p>
-          <p> Que tipo de memória é volátil e utilizada para armazenar dados temporários?</p>
-          <p> Que tipo de processador possui quatro núcleos de processamento?</p>
-          <p> Qual é o componente principal de um computador que executa as instruções?</p>
-          <p> Que sigla é comumente usada para se referir ao Sinal de Chip?</p>
-          <p> Que tipo de processador possui dois núcleos de processamento?</p>
-          <p> Que tipo de memória é pequena e rápida, usada para armazenar dados frequentemente acessados?</p>
-          <p> Que componente do computador armazena dados temporários de forma rápida?</p>
-          <p> Que tipo de memória é utilizada para armazenar dados permanentes?</p>
-          <p> Que tipo de processador é da série i7 da Intel?</p>
-          <p> Que tipo de processador é da série i5 da Intel?</p>
-          <p> O que são Threads?</p>
-          <p> Que tipo de memória é programável e pode ser apagada eletronicamente?</p>
+          <p>4. Qual é o barramento responsável por transmitir endereços de memória para o processador?</p>
+          <p>5. Que tipo de memória é não volátil e permite regravação repetida?</p>
+          <p>6. Que tipo de memória é apenas de leitura e contém informações permanentes?</p>
+          <p>7. Que tipo de memória é volátil e utilizada para armazenar dados temporários?</p>
+          <p>8. Que tipo de processador possui quatro núcleos de processamento?</p>
+          <p>9. Qual é o componente principal de um computador que executa as instruções?</p>
+          <p>10. Que sigla é comumente usada para se referir ao Sinal de Chip?</p>
+          <p>11. Que tipo de processador possui dois núcleos de processamento?</p>
+          <p>12. Que tipo de memória é pequena e rápida, usada para armazenar dados frequentemente acessados?</p>
+          <p>13. Que componente do computador armazena dados temporários de forma rápida?</p>
+          <p>14. Que tipo de memória é utilizada para armazenar dados permanentes?</p>
+          <p>15. Que tipo de processador é da série i7 da Intel?</p>
+          <p>16. Que tipo de processador é da série i5 da Intel?</p>
+          <p>17. O que são Threads?</p>
+          <p>18. Que tipo de memória é programável e pode ser apagada eletronicamente?</p>
         </div>
-        <input id="inputRespostas" />
-        <button onclick="validarResposta()">Validar Resposta</button>
+
+         
         <div class="sectionCruzada">
         </div>
       </div>
+
+
       <div class="palavraCruzada">
+       <input id="inputRespostas" />
+        <button onclick="validarResposta()">Validar Resposta</button>
         <table>
           <tr>
             <td></td>
@@ -57,7 +62,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">13</td>
             <td></td>
             <td></td>
             <td></td>
@@ -79,7 +84,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">3</td>
             <td></td>
             <td></td>
             <td></td>
@@ -105,12 +110,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">2</td>
             <td class="DMA DATABUS" id="cor">D</td>
             <td class="DMA" id="cor">M</td>
             <td class="DMA" id="cor">A</td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">18</td>
             <td class="REGISTRADORES EPROM" id="cor">E</td>
             <td class="EPROM" id="cor">P</td>
             <td class="EPROM" id="cor">R</td>
@@ -159,12 +164,12 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">15</td>
             <td class="DATABUS" id="cor">T</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">16</td>
             <td class="REGISTRADORES I5" id="cor">I</td>
             <td class="I5" id="cor">5</td>
             <td></td>
@@ -180,7 +185,7 @@
             <td></td>
           </tr>
           <tr>
-            <td></td>
+            <td id="idNumeracao">14</td>
             <td class="MEMORIADEMASSA" id="cor">M</td>
             <td class="MEMORIADEMASSA" id="cor">E</td>
             <td class="MEMORIADEMASSA" id="cor">M</td>
@@ -225,9 +230,9 @@
             <td></td>
             <td></td>
             <td></td>
+            <td id="idNumeracao">10</td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td id="idNumeracao">11</td>
             <td></td>
             <td></td>
             <td></td>
@@ -240,7 +245,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id= "idNumeracao">1</td>
             <td class="ULA DATABUS" id="cor">U</td>
             <td class="ULA" id="cor">L</td>
             <td class="ULA" id="cor">A</td>
@@ -261,7 +266,7 @@
             <td></td>
           </tr>
           <tr>
-            <td></td>
+            <td id="idNumeracao">17</td>
             <td class="THREADS" id="cor">T</td>
             <td class="THREADS" id="cor">H</td>
             <td class="THREADS" id="cor">R</td>
@@ -272,7 +277,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">4</td>
             <td class="REGISTRADORES ADDRESSBUS" id="cor">A</td>
             <td class="ADDRESSBUS" id="cor">D</td>
             <td class="ADDRESSBUS" id="cor">D</td>
@@ -306,7 +311,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td ></td>
             <td></td>
             <td class="DUALCORE" id="cor">A</td>
             <td></td>
@@ -324,7 +329,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">7</td>
             <td></td>
             <td></td>
             <td class="REGISTRADORES" id="cor">O</td>
@@ -333,7 +338,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">5</td>
             <td class="FLASH" id="cor">F</td>
             <td class="FLASH DUALCORE" id="cor">L</td>
             <td class="FLASH" id="cor">A</td>
@@ -376,7 +381,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">12</td>
             <td class="CACHE" id="cor">C</td>
             <td class="CACHE RAM" id="cor">A</td>
             <td class="CACHE" id="cor">C</td>
@@ -387,7 +392,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">6</td>
             <td class="ROM" id="cor">R</td>
             <td class="ROM DUALCORE" id="cor">O</td>
             <td class="ROM" id="cor">M</td>
@@ -413,7 +418,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">9</td>
             <td></td>
             <td></td>
             <td class="DUALCORE" id="cor">R</td>
@@ -435,7 +440,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td id="idNumeracao">8</td>
             <td class="QUADCORE" id="cor">Q</td>
             <td class="QUADCORE" id="cor">U</td>
             <td class="QUADCORE" id="cor">A</td>
@@ -494,7 +499,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="CPU DATABUS" id="cor">U</td>
+            <td class="CPU" id="cor">U</td>
             <td></td>
             <td></td>
             <td></td>
@@ -539,6 +544,7 @@
 </html>
 
 <script>
+ 
   var listaRespostas = [
     "ULA",
     "DMA",
@@ -562,28 +568,29 @@
 
   function validarResposta() {
     var resposta = inputRespostas.value;
-    var acerto = false;
+    var acertou = false;
 
     for (var i = 0; i < listaRespostas.length; i++) {
+
       if (resposta.toUpperCase() == listaRespostas[i]) {
-        acerto = true;
+        acertou = true;
       }
     }
-    if (acerto == true) {
+    if (acertou == true) {
       alert("Acertou");
-      pintarLetras(resposta);
+      ColorirCampo(resposta);
     } else {
       alert("Errou");
     }
   }
 
-  function pintarLetras(resposta) {
-    var ocultar = document.getElementsByClassName(`${resposta}`);
-    for (let i = 0; i < ocultar.length; i++) {
-      const element = ocultar[i];
-      element.style.backgroundColor = "white";
+  function ColorirCampo(resposta) {
+    var mostrar = document.getElementsByClassName(`${resposta.toUpperCase()}`);
+    for (var i = 0; i < mostrar.length; i++) {
+      const element = mostrar[i];
+      element.style.backgroundColor = "WHITE";
     }
   }
 
-  function pergunta() { }
+  
 </script>
